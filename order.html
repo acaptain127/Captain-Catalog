@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place Your Order</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Minimal button styling in case styles.css doesn't define it */
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid currentColor;
+    }
+
+    .order-terms {
+      margin-top: 0.75rem;
+    }
+
+    /* Make bullets "inside" so the text starts right next to the marker,
+       and remove the default left padding/indent. */
+    .order-terms ul {
+      margin: 0.5rem 0 0;
+      padding-left: 0;
+      list-style-position: inside;
+    }
+
+    .order-terms li {
+      margin: 0.35rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Place an Order</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pumpkins.html">Pumpkin Catalog</a>
+      <a href="order.html" aria-current="page">Place Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order-form">
+      <h2>Place your order</h2>
+      <p>We now take orders through a simple Google Form.</p>
+      <p>
+        <!-- Replace {google_form_placeholder} with your actual Google Form URL -->
+        <a class="cta-button" href="https://forms.gle/ri5arSa6hQCriR3b6" target="_blank" rel="noopener noreferrer">
+          Open the Order Form
+        </a>
+      </p>
+
+      <!-- Ordering terms -->
+      <section class="order-terms" aria-labelledby="ordering-terms-title">
+        <h3 id="ordering-terms-title">Ordering Terms</h3>
+        <ul>
+          <li>A $1,000.00 minimum order is required for free delivery.</li>
+          <li>All orders must be placed by Thursday to receive delivery over the weekend.</li>
+          <li>Orders placed on Friday or Saturday will be delivered the following weekend.</li>
+          <li>Please make all checks payable to Andrew Captain.</li>
+          <li>Orders are delivered in custom-made crates ($15 each, refundable deposit upon return; multiple crates may be used based on order size).</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Our Pumpkin Patch</p>
+  </footer>
+</body>
+</html>
+

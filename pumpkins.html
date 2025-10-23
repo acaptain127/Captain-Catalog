@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pumpkin Catalog</title>
+  <meta name="description" content="Our Pumpkin Patch catalog organized by class with diameter and price." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Small page-specific helpers that don't conflict with the main CSS -->
+  <style>
+    :root { --banner-bg: #f97316; --banner-fg: #fff; --border: #e5e7eb; }
+
+    .category { margin: 1.25rem 0 2rem; }
+
+    .category-banner {
+      display: block;
+      width: 100%;
+      font: 700 1rem/1.2 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      padding: .65rem .9rem;
+      border-radius: .5rem;
+      background: var(--banner-bg);
+      color: var(--banner-fg);
+    }
+
+    .pumpkin-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .pumpkin-card { border: 1px solid var(--border); border-radius: .6rem; overflow: hidden; }
+    .pumpkin-media img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+
+    /* Base layout for the small spec lists (enhanced in styles.css) */
+    .pumpkin-body { padding: .75rem; text-align: center; display: grid; gap: .5rem; }
+    .meta { display: grid; gap: .25rem; margin: 0; }
+    .meta div { display: grid; grid-template-columns: 1fr; }
+    .meta dt { font-weight: 600; font-size: .9rem; }
+    .meta dd { margin: 0; font-size: .95rem; }
+    .price { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="site-title">Pumpkin Catalog</h1>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="pumpkins.html" aria-current="page" class="is-active">Pumpkin Catalog</a>
+        <a href="order.html">Place Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container" role="main">
+    <section class="catalog" aria-labelledby="our-pumpkins">
+      <h2 id="our-pumpkins">The Patch</h2>
+
+      <!-- ORANGE -->
+      <div class="category" aria-labelledby="cat-orange">
+        <h3 id="cat-orange" class="category-banner">Orange</h3>
+        <div class="pumpkin-grid">
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/tall-jack.jpg" alt="Tall Jack pumpkin, deep orange and tall" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Tall Jack</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/large-jack.jpg" alt="Large Jack pumpkin, deep orange and large round" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Large Jack</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/medium-jack.jpg" alt="Medium Jack pumpkin, deep orange and round" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Medium Jack</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/small-jack.jpg" alt="Small Jack pumpkin, deep orange and small round" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Small Jack</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/large-bumpy.jpg" alt="Large Bumpy pumpkin, deep orange and heavily textured" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Baby Jack</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/medium-bumpy.jpg" alt="Medium Bumpy pumpkin, deep orange and bumpy" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Large Bumpy</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/baby-orange.jpg" alt="Baby Orange pumpkin, small bright orange" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Medium Bumpy</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/baby-bumpy-orange.jpg" alt="Baby Bumpy Orange pumpkin, small orange with bumpy texture" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Small Bumpy</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- WORLD OF COLOR -->
+      <div class="category" aria-labelledby="cat-world">
+        <h3 id="cat-world" class="category-banner">World of color</h3>
+        <div class="pumpkin-grid">
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/green.jpg" alt="Green pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Green</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/blue.jpg" alt="Blue pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Blue</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/pink.jpg" alt="Pink pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Pink</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/50-50.jpg" alt="50/50 pumpkin, half orange and half white" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">50/50</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/red.jpg" alt="Red pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Red</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/starbursts.jpg" alt="Starbursts patterned pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Starbursts</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/lacy.jpg" alt="Lacy patterned pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Lacey</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/white-stackers.jpg" alt="White Stacker pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">White Stacker</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/white-round.jpg" alt="Large White pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Large White</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/blanco.jpg" alt="Medium White pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Medium White</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/white-round.jpg" alt="Small white pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Small white</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/small-long-whites.jpg" alt="Small long white pumpkins, elongated white minis" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Small long whites</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ODDBALLS -->
+      <div class="category" aria-labelledby="cat-oddballs">
+        <h3 id="cat-oddballs" class="category-banner">oddballs and special sized</h3>
+        <div class="pumpkin-grid">
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/grizzies.jpg" alt="Grizzies pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Grizzies</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/mac-n-cheese.jpg" alt="Mac N Cheese pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Mac N Cheese</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/corn-cobb.jpg" alt="Corn Cobb pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Corn Cobb</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/fire-ball.jpg" alt="Fire Ball pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Fire Ball</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/greek-fire-ball.jpg" alt="Greek Fire Ball pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Greek Fire Ball</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/cushaw.jpg" alt="Cushaw squash/pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Cushaw</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/green-cushawn.jpg" alt="Green Cushawn squash/pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Green Cushawn</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/novas.jpg" alt="Novas pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Novas</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/off-orange-stackers.jpg" alt="Off Orange Stackers pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Off Orange Stackers</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- Moved from Fun Sizes -->
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/fun-ghost.jpg" alt="Ghost pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Ghost</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- New -->
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/gooseneck.jpg" alt="Gooseneck pumpkin — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Gooseneck</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- New -->
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/apples.jpg" alt="Apples — oddball/special variety" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Apples</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- FUN SIZES -->
+      <div class="category" aria-labelledby="cat-funsizes">
+        <h3 id="cat-funsizes" class="category-banner">fun sizes</h3>
+        <div class="pumpkin-grid">
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/fun-yellow.jpg" alt="Yellow — fun size mini pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Yellow</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/fun-white.jpg" alt="White — fun size mini pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">White</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/fun-black.jpg" alt="Black — fun size mini pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Black</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/fun-black-orange-bumpy.jpg" alt="Black Bumpy — fun size mini pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Black Bumpy</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/baby-sunburst.jpg" alt="Sunburst — fun size mini pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Sunburst</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/gizmos.jpg" alt="Gizmos — fun size mini pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Gizmos</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- MISC -->
+      <div class="category" aria-labelledby="cat-misc">
+        <h3 id="cat-misc" class="category-banner">Miscellaneous</h3>
+        <div class="pumpkin-grid">
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/grand-prize-pumpkin.jpg" alt="Grand Prize Pumpkin" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Grand Prize Pumpkin</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Avg. Diameter</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/hay-bales.jpg" alt="Hay Bales" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Hay Bales</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Bale size</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="pumpkin-card">
+            <figure class="pumpkin-media">
+              <img src="images/corn-stalks.jpg" alt="Corn Stalks" loading="lazy" decoding="async" />
+            </figure>
+            <div class="pumpkin-body">
+              <h3 class="card-title">Corn Stalks</h3>
+              <dl class="meta kv">
+                <div class="row"><dt>Bundle</dt><dd><span class="update-flag">Update</span></dd></div>
+                <div class="row"><dt data-icon="$">Price</dt><dd><span class="update-flag">Update</span></dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Our Pumpkin Patch</p>
+    </div>
+  </footer>
+  <script src="pumpkin-admin.js" data-admin="true" defer></script>
+</body>
+</html>
+
+
+
+
+
